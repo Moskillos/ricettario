@@ -9,7 +9,10 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('Titolo', 'Descrizione', 'https://smartfood.ieo.it/media/1642/la-lista-degli-ingredienti.png')
+    new Recipe('Titolo', 'Descrizione', 
+    'https://smartfood.ieo.it/media/1642/la-lista-degli-ingredienti.png'),
+    new Recipe('Titolo', 'Descrizione', 
+    'https://smartfood.ieo.it/media/1642/la-lista-degli-ingredienti.png')
   ];
 
   constructor() { }

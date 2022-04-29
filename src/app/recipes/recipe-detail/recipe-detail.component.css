@@ -1,0 +1,11 @@
+button{
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+}
+
+.manage-recipe{
+    display: none;
+}

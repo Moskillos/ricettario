@@ -1,0 +1,6 @@
+a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(226, 185, 185);
+}

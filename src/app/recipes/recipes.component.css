@@ -1,0 +1,13 @@
+.recipe-component{
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+   
+}
+
+.recipe-list{
+    grid-column: 1 / 2;
+}
+
+.recipe-detail{
+    grid-column: 2/ 3;
+}

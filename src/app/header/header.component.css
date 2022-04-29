@@ -5,7 +5,7 @@
 
 .header{
     display: flex;    
-    background-color: blueviolet;
+    background-color: whitesmoke;
     width: 100%;
 }
 
@@ -21,10 +21,20 @@ nav{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: yellow;
+    padding: 0px 20px;
 }
 
 .left-nav{
     display: flex;
-    gap: 2 0px;
+    gap: 20px;
+}
+
+.right-nav{
+    position: relative;
+    min-width: 70px;
+}
+
+.toggle{
+    position: absolute;
+    display: none;
 }
