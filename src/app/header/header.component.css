@@ -1,6 +1,7 @@
 *{
     list-style-type: none;
     text-decoration: none;
+    
 }
 
 .header{
@@ -37,4 +38,14 @@ nav{
 .toggle{
     position: absolute;
     display: none;
+}
+
+.show{
+    display: block;
+}
+
+.active{
+    background-color: blue;    
+    color: white;
+    padding: 20px;
 }

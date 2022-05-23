@@ -1,3 +1,5 @@
+
+
 .label{
     display: flex;
     padding: 10px;
@@ -17,7 +19,7 @@ button{
     color: white;
     border: none;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
 
 .add{

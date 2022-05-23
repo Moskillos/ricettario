@@ -1,1 +1,21 @@
-<p>recipe-item works!</p>
+<div class="recipe-list-content">
+
+    <a style="cursor: pointer"
+       [routerLink]="[index]" 
+       
+        >
+      <div class="ingredient-content" routerLinkActive="active">
+        <div>
+          <div>
+            {{ recipe.name }}
+          </div>
+          <div>
+            {{ recipe.description }}
+          </div>
+        </div>
+        <div>
+          <img [src]="recipe.imagePath" alt="{{ recipe.name }}" srcset="" width="100px">
+        </div>
+      </div>
+    </a>
+  </div>

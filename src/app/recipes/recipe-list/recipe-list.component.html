@@ -1,29 +1,12 @@
 <div class="recipe-list">
   <div>
-    <button>New Recipe</button>
+    <button (click)="onNewRecipe()" style="cursor: pointer">New Recipe</button>
   </div>
-  <div class="recipe-list-content" *ngFor="let recipe of recipes">
-
-    <a href="">
-      <div class="ingredient-content">
-        <div>
-          <div>
-            Title
-          </div>
-          <div>
-            description
-          </div>
-        </div>
-        <div>
-          <img [src]="recipe.imagePath" alt="" srcset="" width="100px">
-        </div>
-      </div>
-    </a>
-
-
-
-
-
+  <div>
+    <app-recipe-item *ngFor="let recipeEl of recipes; let i = index" 
+    [recipe]="recipeEl"
+    [index]="i"
+    ></app-recipe-item>
   </div>
 
 </div>

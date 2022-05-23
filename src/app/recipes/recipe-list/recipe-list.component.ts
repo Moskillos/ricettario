@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { Recipe } from '../recipe.model';
+import { RecipeService } from '../recipe.service';
 
 
 @Component({
@@ -8,16 +11,18 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [
-    new Recipe('Titolo', 'Descrizione', 
-    'https://smartfood.ieo.it/media/1642/la-lista-degli-ingredienti.png'),
-    new Recipe('Titolo', 'Descrizione', 
-    'https://smartfood.ieo.it/media/1642/la-lista-degli-ingredienti.png')
-  ];
+ 
+  @Input() recipes!: Recipe[];
 
-  constructor() { }
+  constructor(private recipeService: RecipeService,
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.recipes = this.recipeService.getRecipes()
   }
 
+  onNewRecipe(){
+    this.router.navigate(['new'], {relativeTo: this.route})
+  }
 }

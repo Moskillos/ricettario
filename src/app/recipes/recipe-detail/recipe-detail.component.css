@@ -1,11 +1,27 @@
-button{
+.button-recipe{
     padding: 10px;
     color: white;
     border: none;
     border-radius: 5px;
     background-color: brown;
+    text-decoration: none;
+    position: relative;
+}
+
+.manage-recipe-section{
+    margin-bottom: 20px;
 }
 
 .manage-recipe{
-    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: none;
+    border: 1px solid black;
+    z-index: 1;
+    background-color: white;
+    display: block;
 }
+
+
+
+
